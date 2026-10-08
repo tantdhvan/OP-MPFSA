@@ -1,0 +1,80 @@
+{
+  "pipeline": "standalone fair k-IM chart pipeline",
+  "dataset_key": "email",
+  "dataset": "Email-Eu-core",
+  "input_dir": "results",
+  "budgets": [
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "algorithms": [
+    "Fair-Greedy",
+    "Fair-Threshold",
+    "OPFSA",
+    "MPFSA"
+  ],
+  "metrics": [
+    "objective",
+    "queries",
+    "memory"
+  ],
+  "excluded_metric": "runtime_seconds",
+  "uncertainty": "one deterministic run per algorithm and B; objective evaluation-SE is retained in summary but no run-to-run bands are drawn",
+  "query_definition": "value-oracle calls; not multiplied by decision MC",
+  "memory_definition": "algorithm-phase Python-traced peak; not full process RSS",
+  "access_models": {
+    "Fair-Greedy": "offline",
+    "Fair-Threshold": "offline",
+    "OPFSA": "one-pass-fixed-order",
+    "MPFSA": "replayable-fixed-order"
+  },
+  "layout": "shared legend plus objective, queries, and memory panels",
+  "source_files": {
+    "Fair-Greedy": {
+      "9": "results/run_details.csv",
+      "12": "results/run_details.csv",
+      "15": "results/run_details.csv",
+      "18": "results/run_details.csv",
+      "21": "results/run_details.csv",
+      "24": "results/run_details.csv",
+      "27": "results/run_details.csv",
+      "30": "results/run_details.csv"
+    },
+    "Fair-Threshold": {
+      "9": "results/run_details.csv",
+      "12": "results/run_details.csv",
+      "15": "results/run_details.csv",
+      "18": "results/run_details.csv",
+      "21": "results/run_details.csv",
+      "24": "results/run_details.csv",
+      "27": "results/run_details.csv",
+      "30": "results/run_details.csv"
+    },
+    "OPFSA": {
+      "9": "results/run_details.csv",
+      "12": "results/run_details.csv",
+      "15": "results/run_details.csv",
+      "18": "results/run_details.csv",
+      "21": "results/run_details.csv",
+      "24": "results/run_details.csv",
+      "27": "results/run_details.csv",
+      "30": "results/run_details.csv"
+    },
+    "MPFSA": {
+      "9": "results/run_details.csv",
+      "12": "results/run_details.csv",
+      "15": "results/run_details.csv",
+      "18": "results/run_details.csv",
+      "21": "results/run_details.csv",
+      "24": "results/run_details.csv",
+      "27": "results/run_details.csv",
+      "30": "results/run_details.csv"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated manuscript."
+title: "Reproducible code artifact for fair monotone k-submodular streaming"
+type: software
+version: "0.1.0"
+date-released: 2026-10-08
+license: MIT
+authors:
+  - family-names: Pham
+    given-names: "Dung T."
+  - family-names: Tran
+    given-names: "Tan D."
+  - family-names: Pham
+    given-names: "Canh V."
+keywords:
+  - k-submodular maximization
+  - fair streaming algorithms
+  - influence maximization
+  - reproducible experiments
+abstract: >-
+  Reproducible runner, results, datasets, and plotting pipeline for the
+  exploratory fair monotone k-submodular influence-maximization experiments
+  accompanying the manuscript Streaming Algorithms for Monotone k-Submodular
+  Maximization under Fairness Constraints.
